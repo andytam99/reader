@@ -1,14 +1,8 @@
 import React, { Component } from 'react'
 import Index from '../index';
+import { Props } from '../../layout/article'
 
-export interface Props {
-    title: string;
-    subtitle: string;
-    description: string;
-    index: { name: string, link: string }[]
-}
-
-export default class MainHeader extends Component<Props> {
+export default class MainHeader extends Component<Omit<Props, "content">> {
     render() {
         const { title, subtitle, description, index } = this.props;
         return (
@@ -16,19 +10,18 @@ export default class MainHeader extends Component<Props> {
 
                 <div className='w-full md:w-2/6 min-h-screen h-auto md:p-8'>
 
-                    <div className='flex flex-col items-center justify-between w-full min-h-screen sm:min-h-full h-full shadow-md bg-indigo-500/75 md:rounded-xl p-8 '>
+                    <div className='flex flex-col items-center justify-between w-full min-h-screen sm:min-h-full h-full shadow-md bg-indigo-400 dark:bg-indigo-500 md:rounded-xl p-8 '>
 
                         <Index index={index} />
 
                     </div>
-
 
                 </div>
 
                 <div className='flex flex-col items-end justify-between w-full md:w-2/3 min-h-screen sm:min-h-full h-auto p-8 text-center md:text-right'>
 
                     <div className='flex flex-col items-end justify-start w-full'>
-                        <h4 className='w-full text-5xl sm:text-7xl text-indigo-500/75 font-bold mb-2'>{subtitle}</h4>
+                        <h4 className='w-full text-5xl sm:text-7xl text-indigo-400 dark:text-indigo-500 font-bold mb-2'>{subtitle}</h4>
                         <h3 className='w-full text-3xl sm:text-5xl text-neutral-500 dark:text-white font-medium'>{title}</h3>
                     </div>
 

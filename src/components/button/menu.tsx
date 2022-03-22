@@ -6,7 +6,7 @@ import { MenuIcon, XIcon } from '@heroicons/react/solid'
 import Index from '../../partials/index';
 
 interface Props {
-    index: { name: string, link: string }[]
+    index: { name: string }[]
 }
 
 interface State {
