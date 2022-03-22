@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import ThemeToggle from '../../components/toggle/theme';
+import Index from '../index';
 
 export interface Props {
     title: string;
@@ -18,25 +18,7 @@ export default class MainHeader extends Component<Props> {
 
                     <div className='flex flex-col items-center justify-between w-full min-h-screen sm:min-h-full h-full shadow-md bg-indigo-500/75 md:rounded-xl p-8 '>
 
-                        <div className='flex flex-col items-start justify-start w-full'>
-                            <h3 className='text-4xl sm:text-3xl text-white font-bold mb-2'>
-                                Índice
-                            </h3>
-
-                            <ul>
-                                {index.map(i => {
-                                    return <li className='text-2xl sm:text-base text-white mb-2'>
-                                        <a href={`#${i.name.split(' ', 1)[0]}`}>
-                                            {i.name}
-                                        </a>
-                                    </li>
-                                })}
-                            </ul>
-                        </div>
-
-                        <div className='flex items-start justify-start w-full'>
-                            <ThemeToggle name="theme" />
-                        </div>
+                        <Index index={index} />
 
                     </div>
 

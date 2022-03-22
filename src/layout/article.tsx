@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import ReactMarkdown from 'react-markdown';
+import MenuButton from '../components/button/menu';
 import MainHeader, { Props as HeaderProps } from '../partials/header/header'
 
 interface Props extends HeaderProps {
@@ -55,6 +56,7 @@ export default class ArticleLayout extends Component<Props, State> {
                     index={index}
                 />
                 <article>
+                    <MenuButton index={index} />
                     <ReactMarkdown>
                         {
                             this.state.content
