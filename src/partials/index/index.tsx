@@ -30,8 +30,8 @@ export default class Index extends Component<Props> {
           </h3>
 
           <ul className='w-full py-4 overflow-auto'>
-            {this.props.index.map(i => {
-              return <li className='w-full text-2xl sm:text-base text-white p-2 hover:bg-white/10 transition-all rounded-lg'>
+            {this.props.index.map((i,x) => {
+              return <li key={x} className='w-full text-2xl sm:text-base text-white p-2 hover:bg-white/10 transition-all rounded-lg'>
                 <a href={`#${i.name.replaceAll(' ', '-')}`}>
                   {i.name}
                 </a>
