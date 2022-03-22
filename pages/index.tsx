@@ -19,8 +19,8 @@ const Home = (Data: Data) => {
 export const getStaticProps: GetStaticProps = async () => {
   let dev = process.env.NODE_ENV == 'development',
     dev_url = process.env.DEV_URL,
-    prod_url = process.env.VERCEL_URL;
-  const get = await fetch(`http://${dev ? dev_url : prod_url}/api/content`);
+    prod_url = process.env.PROD_URL;
+  const get = await fetch(`${dev ? dev_url : prod_url}/api/content`);
   const data = await get.json();
   return {
     props: data
