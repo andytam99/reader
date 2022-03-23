@@ -1,6 +1,7 @@
 import axios from 'axios';
 import type { GetStaticProps } from 'next'
 import ArticleLayout from '../src/layout/article';
+import { getContent } from '../src/lib';
 
 interface Data {
   title: string;
@@ -18,9 +19,7 @@ const Home = (Data: Data) => {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  let dev = process.env.NODE_ENV == 'development',
-    dev_url = process.env.DEV_URL;
-  const data = await axios.get(`${dev ? dev_url : ''}/api/content`);
+  const data = await getContent()
   return {
     props: data
   }
