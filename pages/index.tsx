@@ -1,4 +1,3 @@
-import axios from 'axios';
 import type { GetStaticProps } from 'next'
 import ArticleLayout from '../src/layout/article';
 import { getContent } from '../src/lib';
