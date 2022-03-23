@@ -1,3 +1,4 @@
+import axios from 'axios';
 import type { GetStaticProps } from 'next'
 import ArticleLayout from '../src/layout/article';
 
@@ -18,10 +19,8 @@ const Home = (Data: Data) => {
 
 export const getStaticProps: GetStaticProps = async () => {
   let dev = process.env.NODE_ENV == 'development',
-    dev_url = process.env.DEV_URL,
-    prod_url = process.env.PROD_URL;
-  const get = await fetch(`${dev ? dev_url : prod_url}/api/content`);
-  const data = await get.json();
+    dev_url = process.env.DEV_URL;
+  const data = await axios.get(`${dev ? dev_url : ''}/api/content`);
   return {
     props: data
   }
