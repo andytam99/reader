@@ -2,7 +2,7 @@ export const Props = {
   title: "Emprendimiento",
   subtitle: "Compendio de Errores de Inicio",
   description:
-    "Tempora consequatur molestiae ipsa iusto consectetur natus aliquam ullam. Laudantium qui vero veniam animi. Aliquid et ducimus sit dignissimos nobis rerum suscipit. Accusantium optio ea ipsa.",
+    "La cultura en la que crecemos muchos latinoamericanos no favorece una mentalidad adecuada frente al emprendimiento. Este escrito pretende ayudar a corregir varios de los errores más comunes que surgen de este problema a la hora de comenzar a emprender.",
   index: [
     {
       name: "Introducción",
