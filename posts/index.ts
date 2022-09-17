@@ -6,67 +6,67 @@ export const Props = {
   index: [
     {
       name: "Introducción",
-      link: "andytam99/libro/main/intro.md",
+      link: "andytam99/libroecei/main/intro.md",
     },
     {
       name: "Estilo",
-      link: "andytam99/libro/main/estilo.md",
+      link: "andytam99/libroecei/main/estilo.md",
     },
     {
       name: "Expectativas",
-      link: "andytam99/libro/main/expectativas.md",
+      link: "andytam99/libroecei/main/expectativas.md",
     },
     {
       name: "Aprendizaje",
-      link: "andytam99/libro/main/aprendizaje.md",
+      link: "andytam99/libroecei/main/aprendizaje.md",
     },
     {
       name: "Fundamentos",
-      link: "andytam99/libro/main/fundamentos.md",
+      link: "andytam99/libroecei/main/fundamentos.md",
     },
     {
       name: "Definiciones",
-      link: "andytam99/libro/main/definiciones.md",
+      link: "andytam99/libroecei/main/definiciones.md",
     },
     {
       name: "Mentalidad",
-      link: "andytam99/libro/main/mentalidad.md",
+      link: "andytam99/libroecei/main/mentalidad.md",
     },
     {
       name: "Ética",
-      link: "andytam99/libro/main/etica.md",
+      link: "andytam99/libroecei/main/etica.md",
     },
     {
       name: "Cultura",
-      link: "andytam99/libro/main/cultura.md",
+      link: "andytam99/libroecei/main/cultura.md",
     },
     {
       name: "Emprendimiento",
-      link: "andytam99/libro/main/emprendimiento.md",
+      link: "andytam99/libroecei/main/emprendimiento.md",
     },
     {
       name: "Producto",
-      link: "andytam99/libro/main/producto.md",
+      link: "andytam99/libroecei/main/producto.md",
     },
     {
       name: "Seguridad",
-      link: "andytam99/libro/main/seguridad.md",
+      link: "andytam99/libroecei/main/seguridad.md",
     },
     {
       name: "Validación",
-      link: "andytam99/libro/main/validacion.md",
+      link: "andytam99/libroecei/main/validacion.md",
     },
     {
       name: "Métricas",
-      link: "andytam99/libro/main/metricas.md",
+      link: "andytam99/libroecei/main/metricas.md",
     },
     {
       name: "Capital",
-      link: "andytam99/libro/main/capital.md",
+      link: "andytam99/libroecei/main/capital.md",
     },
     {
       name: "Conclusión",
-      link: "andytam99/libro/main/conclusion.md",
+      link: "andytam99/libroecei/main/conclusion.md",
     },
   ],
 };
